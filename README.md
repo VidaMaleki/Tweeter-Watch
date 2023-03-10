@@ -6,7 +6,7 @@ The list of accounts:
 - @BarackObama
 - @taylorlorenz
 
-## Set-up
+## Setup
 ### Managing Dependencies
 Create a virtual environment:
 
@@ -58,7 +58,15 @@ We can run the Flask server specifying that we're working in the development env
 ```bash
 $ FLASK_ENV=development flask run
 ```
+## Tweet Models
 
 
+### Tips
 
+SQLAlchemy's column type for text is db.String. The column type for datetime is db.DateTime.
+SQLAlchemy supports nullable columns with specific syntax.
+Don't forget to run:
+flask db init once during setup
+flask db migrate every time there's a change in models, in order to generate migrations
+flask db upgrade to run all generated migrations
 

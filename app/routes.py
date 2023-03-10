@@ -4,7 +4,7 @@ from app import db
 from datetime import datetime
 from textblob import TextBlob
 import json
-import pandas as pd
+# import pandas as pd
 
 tweet_bp = Blueprint("tweete_watch", __name__)
 
